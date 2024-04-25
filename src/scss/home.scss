@@ -1,0 +1,48 @@
+.section {
+ 
+}
+.section-wrapper {
+  overflow: hidden;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.section-01 {
+  .section-wrapper {
+    background-image: url('../img/bg.jpg');
+    background-repeat: repeat;
+    background-size: 100px 1000px;
+  }
+	// .section-01__bg
+	&__bg {
+	}
+	// .section-01__cat
+	&__cat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+	}
+	// .section-01__hearts
+	&__hearts {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+	}
+	// .section-01__logo
+	&__logo {
+    position: absolute;
+    @include adaptiveValue("top", 50, 36,0,1920,1366.98);
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 5;
+    height: auto;
+    @include adaptiveValue("width", 300, 200,0,1920,1366.98);
+	}
+}
+.section-02 {
+}
+.section-03 {
+}

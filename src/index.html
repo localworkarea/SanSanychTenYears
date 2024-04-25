@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"СанСанич 10 років"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main data-fp data-fp-effect="slider" class="page">
+				<section data-fp-section class="section section-01">
+					<div class="section-wrapper">
+						<img class="section-01__bg ibg ibg--contain" src="@img/bg-01.jpg" width="1920" height="1191" alt="Image">
+						<img class="section-01__cat ibg ibg--contain" src="files/cat-pc.apng" width="1920" height="1191" alt="Image">
+						<picture>
+							<source srcset="files/hearts-mob.apng" media="(max-width: 920px)">
+							<source srcset="files/hearts-pc.apng">
+							<img class="section-01__hearts ibg ibg--contain" src="files/cat-pc.apng" width="1920" height="1191" alt="Image">
+						</picture>
+						<img class="section-01__logo" src="@img/logo.png" width="344" height="136" alt="лого СанСанич">
+					</div>
+				</section>
+				<section data-fp-section class="section section-02">
+					<div class="section-wrapper">
+						<img class="ibg" src="@img/bg-02.jpg" width="1920" height="1191" alt="Image">
+					</div>
+				</section>
+				<section data-fp-section class="section section-03">
+					<div class="section-wrapper">
+						<img class="ibg ibg--bottom" src="@img/bg-03.jpg" width="1920" height="1191" alt="Image">
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
