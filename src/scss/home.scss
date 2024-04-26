@@ -118,8 +118,8 @@
        top: 53%;
     }
     @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
-      left: 50%;
-      transform: translate(-30%,-50%);
+      left: 50% !important;
+      transform: translate(-30%,-50%) !important;
     }
 	}
 	// .section-01__button
@@ -168,7 +168,7 @@
       padding: toRem(100) 0 toRem(0); 
     }
     @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
-      padding: 0;
+      padding: 0 !important;
     }
 	}
 	// .section-02__pack-01
@@ -194,7 +194,7 @@
          left: 75%; 
       }
       @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
-        left: 85%;
+        left: 85% !important;
       }
     }
 	}
@@ -222,10 +222,10 @@
          width: toRem(200);
       }
       @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
-        left: toRem(50);
-        bottom: 0;
-        transform: translate(0%,-100%);
-        text-align: left;
+        left: toRem(50) !important;
+        bottom: 0 !important;
+        transform: translate(0%,-100%) !important;
+        text-align: left !important;
       }
     }
   }
@@ -254,8 +254,9 @@
       }
       @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
         scale: 2;
-        left: -30%;
-        top: 40%
+        left: -30% !important;
+        top: 40% !important;
+       
       }
     }
     &.pack-02 {
@@ -271,6 +272,7 @@
       }
       @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
         scale: 2;
+        
       }
     }
 	}

@@ -784,27 +784,27 @@ h6 {
     transform: translate(0,0)
   }
   .section-01__sanych {
-    left: 50%;
-    -webkit-transform: translate(-30%,-50%);
-    transform: translate(-30%,-50%)
+    left: 50%!important;
+    -webkit-transform: translate(-30%,-50%)!important;
+    transform: translate(-30%,-50%)!important
   }
   .section-02__packs {
-    padding: 0
+    padding: 0!important
   }
   .section-02__pack-01 .section-02__title {
-    left: 85%
+    left: 85%!important
   }
   .section-02__pack-02 .section-02__title {
-    left: 3.125rem;
-    bottom: 0;
-    -webkit-transform: translate(0,-100%);
-    transform: translate(0,-100%);
-    text-align: left
+    left: 3.125rem!important;
+    bottom: 0!important;
+    -webkit-transform: translate(0,-100%)!important;
+    transform: translate(0,-100%)!important;
+    text-align: left!important
   }
   .section-02__pack.pack-01 {
     scale: 2;
-    left: -30%;
-    top: 40%
+    left: -30%!important;
+    top: 40%!important
   }
   .section-02__pack.pack-02 {
     scale: 2
