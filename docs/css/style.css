@@ -462,9 +462,6 @@ h6 {
 .section-03__video .video-youtube__body {
   width: 100%;
   display: grid;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
   position: relative;
   z-index: 1;
   background-color: #000
