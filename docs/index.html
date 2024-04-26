@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240425132746">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240426114420">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,40 +14,93 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-			</div>
-		</header>
-		<main data-fp data-fp-effect="slider" class="page">
+		<img class="logo" src="img/logo.webp" width="344" height="136" alt="лого СанСанич">
+		<main data-fp data-fp-effect="fade" class="page">
 			<section data-fp-section class="section section-01">
 				<div class="section-wrapper">
-					<img class="section-01__bg ibg ibg--contain" src="img/bg-01.webp" width="1920" height="1191" alt="Image">
-					<img class="section-01__cat ibg ibg--contain" src="files/cat-pc.apng" width="1920" height="1191" alt="Image">
-					<picture>
-						<source srcset="files/hearts-mob.apng" media="(max-width: 920px)">
-						<source srcset="files/hearts-pc.apng">
-						<img class="section-01__hearts ibg ibg--contain" src="files/hearts-pc.apng" width="1920" height="1191" alt="Image">
-					</picture>
-					<img class="section-01__logo" src="img/logo.webp" width="344" height="136" alt="лого СанСанич">
+					<img class="section-01__tv ibg ibg--contain" src="img/tv.webp" width="1920" height="1191" alt="телевізор в якому показують Сан Санича з двома пачками насіння в руках, на фоні надпис 10 років Якісне насіння для ТБ-глядіння!">
+					<img class="section-01__table" src="img/table.webp" width="1920" height="100" alt="стіл на якому стоїть телевізор">
+					<img class="section-01__cat ibg ibg--contain" src="files/Cat.apng" width="678" height="397" alt="рижий кіт, який здивовано дивиться на телевізор та виляє хвістом, за котом вверх уходять сердечки">
+					<img class="section-01__hearts ibg ibg--contain" src="files/Hearts.apng" width="1920" height="1191" alt="Image">
+					<img class="section-01__sanych ibg ibg--contain" src="img/sanych-mob.webp" width="784" height="544" alt="стіл на якому стоїть телевізор">
+					<div class="section-01__button btn-next">
+						<button type="button" class="section-01__btn btn-next__arrow" aria-label="кнопка перемикання на наступний екран">
+							<img class="btn-next__icon" src="img/icons/arrow.svg" alt="arrow">
+						</button>
+					</div>
 				</div>
 			</section>
 			<section data-fp-section class="section section-02">
 				<div class="section-wrapper">
-					<img class="ibg" src="img/bg-02.webp" width="1920" height="1191" alt="Image">
+					<div class="section-02__packs">
+						<div class="section-02__pack-01">
+							<img class="section-02__pack pack-01 ibg ibg--contain" src="img/pack-01.webp" width="887" height="919" alt="упаковка насіння">
+							<p class="section-02__title title-main">
+								насіння соняшника<br> <span>смажене</span>
+							</p>
+							<picture>
+								<source srcset="img/ellipse-yellow-mob.webp" media="(max-width: 53.186em)" type="image/webp">
+								<source srcset="img/ellipse-yellow.webp" type="image/webp">
+								<img class="section-02__ellipse ibg ibg--contain" src="img/ellipse-yellow.webp" width="858" height="345" alt="Image">
+							</picture>
+						</div>
+						<div class="section-02__pack-02">
+							<img class="section-02__pack pack-02 ibg ibg--contain" src="img/pack-02.webp" width="887" height="919" alt="упаковка насіння">
+							<p class="section-02__title title-main">
+								насіння соняшника смажене<br> <span>солоне</span>
+							</p>
+							<picture>
+								<source srcset="img/ellipse-green-mob.webp" media="(max-width: 53.186em)" type="image/webp">
+								<source srcset="img/ellipse-green.webp" type="image/webp">
+								<img class="section-02__ellipse ibg ibg--contain" src="img/ellipse-green.webp" width="858" height="345" alt="Image">
+							</picture>
+						</div>
+					</div>
+					<div class="section-02__button btn-next">
+						<button type="button" class="section-02__btn btn-next__arrow" aria-label="кнопка перемикання на наступний екран">
+							<img class="btn-next__icon" src="img/icons/arrow.svg" alt="arrow">
+						</button>
+					</div>
 				</div>
 			</section>
 			<section data-fp-section class="section section-03">
 				<div class="section-wrapper">
-					<img class="ibg ibg--bottom" src="img/bg-03.webp" width="1920" height="1191" alt="Image">
+					<div class="section-03__video">
+						<img class="section-03__ic" src="img/button.webp" width="278" height="186" alt="малюнок у вигляді значка ютюба, тільки замість стрілочки в середині значок насіння">
+						<div class="video-youtube__body">
+							<button class="video-youtube__button" type="button" data-youtube="9iyYJl9fFHI">
+								<img class="ibg" src="img/poster.webp" width="1720" height="700" alt="poster video">
+							</button>
+						</div>
+					</div>
+					<div class="seeds-container" id="seeds-container">
+						<img class="section-03__sunflower" src="img/sunflower.svg" alt="Image">
+					</div>
+					<ul class="section-03__social">
+						<li class="section-03__item">
+							<a href="#" class="section-03__link" aria-label="посилання на Facebook">
+								<svg width="83" height="81" viewBox="0 0 83 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.41407 5.62358C-1.08961 12.2149 0.241469 19.2167 0.241469 40.488C0.241469 58.1524 -2.91726 75.8605 13.6144 80.0293C18.7766 81.3247 64.5161 81.3247 69.6715 80.0226C76.5545 78.2898 82.1547 72.8424 82.9202 63.344C83.0271 62.0184 83.0271 18.9812 82.9168 17.6286C82.103 7.51115 75.72 1.68022 67.3093 0.499234C65.3817 0.226698 64.9955 0.145946 55.1055 0.129123C20.0249 0.145946 12.335 -1.37824 5.41407 5.62358V5.62358Z" fill="#521B24" />
+									<path class="svg-bg" d="M75.3705 60.3485C75.3705 68.0399 69.0708 74.2314 61.3324 74.2314H21.0069C13.2295 74.2314 6.96875 68.0014 6.96875 60.3485V20.4688C6.96875 12.8159 13.2684 6.58594 21.0069 6.58594H61.3324C69.1097 6.58594 75.3705 12.8159 75.3705 20.4688V60.3485Z" fill="white" />
+									<path d="M61.4921 25.3528H67.7917V15.5079H59.9366H58.3033C58.3033 15.5079 52.3537 15.354 48.5817 20.2381C48.5817 20.2381 46.0151 22.6608 45.9762 29.6984V37.0437H36.6434V47.4655H45.9762V74.3853H56.7479V47.4655H66.0418L67.3251 37.0437H56.7479V29.6984C56.7868 28.8908 57.1367 25.2759 61.4921 25.3528Z" fill="#521B24" />
+								</svg>
+							</a>
+						</li>
+						<li class="section-03__item">
+							<a href="#" class="section-03__link" aria-label="посилання на Instagram">
+								<svg width="83" height="81" viewBox="0 0 83 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.41407 5.62358C-1.08961 12.2149 0.241469 19.2167 0.241469 40.488C0.241469 58.1524 -2.91726 75.8605 13.6144 80.0293C18.7766 81.3247 64.5162 81.3247 69.6715 80.0226C76.5545 78.2898 82.1547 72.8424 82.9203 63.344C83.0271 62.0184 83.0272 18.9812 82.9168 17.6286C82.103 7.51115 75.72 1.68022 67.3093 0.499234C65.3817 0.226698 64.9955 0.145946 55.1055 0.129123C20.0249 0.145946 12.335 -1.37824 5.41407 5.62358Z" fill="#521B24" />
+									<path class="svg-bg" d="M12.5641 11.3063C7.23718 16.8389 8.32742 22.7161 8.32742 40.5707C8.32742 55.3979 5.74024 70.2617 19.2806 73.7609C23.5087 74.8482 60.972 74.8482 65.1945 73.7552C70.8321 72.3008 75.419 67.7284 76.046 59.7556C76.1336 58.6429 76.1336 22.5184 76.0432 21.383C75.3766 12.8906 70.1486 7.99628 63.2598 7.00498C61.6809 6.77622 61.3646 6.70844 53.2641 6.69432C24.5312 6.70844 18.2327 5.42907 12.5641 11.3063Z" fill="#fff" />
+									<path d="M41.9044 15.024C31.7038 15.024 22.0172 14.1172 18.3173 23.6064C16.7891 27.5256 17.011 32.6155 17.011 39.9036C17.011 46.299 16.8059 52.3097 18.3173 56.1981C22.0088 65.6929 31.774 64.7832 41.8988 64.7832C51.6668 64.7832 61.7382 65.7995 65.4831 56.1981C67.0141 52.2396 66.7894 47.2255 66.7894 39.9036C66.7894 30.1842 67.326 23.9096 62.6091 19.1987C57.8333 14.426 51.3746 15.024 41.8932 15.024H41.9044ZM39.6738 19.5075C60.9516 19.4738 63.6598 17.1099 62.1652 49.9487C61.6343 61.5631 52.7849 60.2885 41.9072 60.2885C22.0734 60.2885 21.5031 59.7214 21.5031 39.8924C21.5031 19.8332 23.0763 19.5187 39.6738 19.5019V19.5075ZM55.1925 23.6373C53.5434 23.6373 52.2062 24.9736 52.2062 26.6216C52.2062 28.2696 53.5434 29.6059 55.1925 29.6059C56.8416 29.6059 58.1788 28.2696 58.1788 26.6216C58.1788 24.9736 56.8416 23.6373 55.1925 23.6373ZM41.9044 27.1269C34.8446 27.1269 29.122 32.8485 29.122 39.9036C29.122 46.9588 34.8446 52.6775 41.9044 52.6775C48.9642 52.6775 54.684 46.9588 54.684 39.9036C54.684 32.8485 48.9642 27.1269 41.9044 27.1269ZM41.9044 31.6104C52.8748 31.6104 52.8889 48.1968 41.9044 48.1968C30.9368 48.1968 30.92 31.6104 41.9044 31.6104Z" fill="#521B24" />
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240425132746"></script>
+	<script src="js/app.min.js?_v=20240426114420"></script>
 </body>
 
 </html>
