@@ -117,6 +117,9 @@
        left: 47%;
        top: 53%;
     }
+    @media (max-width: toEm(376.98)){
+        width: 100%;
+    }
     @media (max-width: toEm(900.98)) and (max-height: toRem(480.98)) {
       left: 50% !important;
       transform: translate(-30%,-50%) !important;

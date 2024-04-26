@@ -998,6 +998,11 @@ h6 {
     column-gap: 1.5rem
   }
 }
+@media (max-width:23.56125em) {
+  .section-01__sanych {
+    width: 100%
+  }
+}
 @media (max-width:22.5em) {
   .btn-next__arrow {
     width: 4.0625rem
