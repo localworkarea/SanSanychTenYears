@@ -396,19 +396,16 @@ export class FullPage {
 			this.bulletsWrapper.addEventListener('click', this.events.click);
 		}
 
-			// Клік по кнопці btn-next для переходу на наступну секцію ----
-			// const firstBtn = document.querySelector('.section-01__btn');
-			// const secondBtn = document.querySelector('.section-02__btn');
-			// if (firstBtn) {
-			// 	firstBtn.addEventListener("click", () => {
-			// 		this.switchingSection(1);
-			// 	});
-			// }
-			// if(secondBtn) {
-			// 	secondBtn.addEventListener("click", () => {
-			// 		this.switchingSection(2);
-			// 	});
-			// }
+
+		const nextArrowBtn = document.querySelector('.btn-next__arrow');
+    if (nextArrowBtn) {
+      nextArrowBtn.addEventListener('click', () => {
+          const nextSectionId = this.activeSectionId + 1;
+          if (nextSectionId < this.sections.length) {
+              this.switchingSection(nextSectionId);
+          }
+      });
+    }
 
 	}
 	removeEvents() {

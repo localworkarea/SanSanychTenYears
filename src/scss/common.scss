@@ -20,6 +20,12 @@
   position: absolute;
   inset: 0;
   z-index: 0;
+  .section-02 &,
+  .section-03 & {
+    .loaded & {
+      opacity: 1 !important;
+    }
+  }
 }
 
 .title-main {
